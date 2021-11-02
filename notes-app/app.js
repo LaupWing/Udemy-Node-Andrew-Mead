@@ -1,5 +1,4 @@
-const name = 'Andrew'
-require('./utils')
+const chalk = require('chalk')
 
 
-console.log(name)
+console.log(chalk.green.bold('Hai'))
