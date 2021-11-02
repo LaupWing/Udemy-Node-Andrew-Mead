@@ -1,6 +1,4 @@
-console.log('utils.js')
+const validator = require('validator')
 
 
-const add = ()=>{
-   
-}
+console.log(validator.isEmail('example.com'))
