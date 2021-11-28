@@ -12,14 +12,23 @@ const location_url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/Heiloo.j
 //       console.log(response)
 //    })
 
-request({url:weather_url}, (err, res)=>{
-   const data = JSON.parse(res.body)
-   // console.log(data.current)
-})
-request({url: location_url}, (err, res)=>{
-   const data = JSON.parse(res.body) 
-   const [long, lat] = data.features[0].center
-   console.log(long, lat)
-   // const data = JSON.parse(res.body)
-   // console.log(data)
+// request({url:weather_url}, (err, res)=>{
+//    const data = JSON.parse(res.body)
+//    // console.log(data.current)
+// })
+// request({url: location_url}, (err, res)=>{
+//    const data = JSON.parse(res.body) 
+//    const [long, lat] = data.features[0].center
+//    console.log(long, lat)
+//    // const data = JSON.parse(res.body)
+//    // console.log(data)
+// })
+
+
+const geocode = (address, callback)=>{
+
+}
+
+geocode('Heiloo', (err, data)=>{
+
 })
